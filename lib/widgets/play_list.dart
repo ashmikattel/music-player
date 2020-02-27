@@ -8,8 +8,7 @@ class PlayList extends StatelessWidget {
   List<MusicModel>musicData;
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-          body: Container(
+    return Container(
           height: MediaQuery.of(context).size.height,
           child: ListView.builder(
             itemBuilder: (ctx , index){
@@ -48,7 +47,6 @@ class PlayList extends StatelessWidget {
             },
             itemCount: musicData.length,
           ),
-        ),
     );
   }
 }

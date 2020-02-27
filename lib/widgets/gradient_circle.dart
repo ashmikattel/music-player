@@ -6,13 +6,10 @@ class MediumGradientCircle extends StatelessWidget {
     return Container(
       decoration:
           BoxDecoration(borderRadius: BorderRadius.circular(100), boxShadow: [
-        BoxShadow(
-          color: Color(0xff333940),
-          blurRadius: 20,
-          spreadRadius: 5,
-          offset: Offset(0.0, 0.75),
-        )
-      ]),
+                BoxShadow(offset: Offset(5, 5),color: Colors.black,blurRadius: 5),
+            BoxShadow(offset: Offset(-5, -5),color: Colors.white.withOpacity(0.1),blurRadius: 10)
+              ]
+    ),
       child: UnicornOutlineButton(
         strokeWidth: 6,
         radius: 130,
@@ -22,7 +19,7 @@ class MediumGradientCircle extends StatelessWidget {
           Color(0xff202328)
         ]),
         child: Container(
-          margin: EdgeInsets.all(8),
+          margin: EdgeInsets.all(6),
           height: 150,
           width: 150,
           decoration: BoxDecoration(
@@ -44,14 +41,9 @@ class LargeGradientCircle extends StatelessWidget {
     return Center(
             child: Container(
         decoration:
-              BoxDecoration(borderRadius: BorderRadius.circular(100), boxShadow: [
-            BoxShadow(
-              // color: Color(0xff333940),
-              color: Colors.grey.withOpacity(0.1),
-              blurRadius: 20,
-              spreadRadius: 5,
-              offset: Offset(0.0, 0.75),
-            )
+              BoxDecoration(borderRadius: BorderRadius.circular(125), boxShadow: [
+            BoxShadow(offset: Offset(5, 5),color: Colors.black,blurRadius: 5),
+            BoxShadow(offset: Offset(-5, -5),color: Colors.white.withOpacity(0.1),blurRadius: 10)
         ]),
         child: UnicornOutlineButton(
             strokeWidth: 6,

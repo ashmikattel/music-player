@@ -43,12 +43,16 @@ class MyHomePage extends StatelessWidget {
                       color: Color(0xff222529),
                       border: Border.all(color:Color(0xff181A1E).withOpacity(0.35),width: 3),
                       borderRadius: BorderRadius.circular(50.0),
-                      boxShadow: [BoxShadow(
-                        color: Color(0xff333940).withOpacity(0.40),
-                            blurRadius: 30,
-                            spreadRadius: 3,
-                            offset: Offset(0.0, 0.75),
-                      )]
+                      boxShadow: [
+                      //   BoxShadow(
+                      //   color: Color(0xff333940).withOpacity(0.40),
+                      //       blurRadius: 30,
+                      //       spreadRadius: 3,
+                      //       offset: Offset(0.0, 0.75),
+                      // )
+                      BoxShadow(offset: Offset(5, 5),color: Colors.black,blurRadius: 5),
+            BoxShadow(offset: Offset(-5, -5),color: Colors.white.withOpacity(0.1),blurRadius: 10)
+                      ]
                     ),
                     child: Center(
                         child: Icon(
@@ -67,12 +71,10 @@ class MyHomePage extends StatelessWidget {
                       color: Color(0xff222529),
                       border: Border.all(color:Color(0xff181A1E).withOpacity(0.30),width: 3),
                       borderRadius: BorderRadius.circular(50.0),
-                      boxShadow: [BoxShadow(
-                        color: Color(0xff333940).withOpacity(0.60),
-                            blurRadius: 20,
-                            spreadRadius: 3,
-                            offset: Offset(0.0, 0.75),
-                      )]
+                      boxShadow: [
+                      BoxShadow(offset: Offset(5, 5),color: Colors.black,blurRadius: 5),
+            BoxShadow(offset: Offset(-5, -5),color: Colors.white.withOpacity(0.1),blurRadius: 10)
+                      ]
                     ),
                     child: Center(
                         child: Icon(

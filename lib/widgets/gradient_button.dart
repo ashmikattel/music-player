@@ -36,41 +36,43 @@ class LargeGradientButtonModel extends StatelessWidget {
   Widget build(BuildContext context) {
     return 
     Center(
-      child: Container(
-        height: 80,
-        width: 80,
-        decoration: BoxDecoration(
-          boxShadow: [BoxShadow(
-            color: Color(0xff262D32),
-            blurRadius: 20,
-            spreadRadius: 3,
-            offset: Offset(0.0, 0.75),
-          )],
-          gradient: LinearGradient(
-        colors: <Color>[
-        Color(0xfff50000),
-         Color(0xfff50000),
-        Color(0xfff50000),
-         Color(0xffEC4C24),
-         Colors.deepOrange.withOpacity(1), 
-           Colors.deepOrange,
-            Colors.orange,
-          
-        ],
-        begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-                //stops: [0.3, 0.75],
+      child: InkWell(
+              child: Container(
+          height: 80,
+          width: 80,
+          decoration: BoxDecoration(
+            boxShadow: [
+            BoxShadow(offset: Offset(10, 10),color: Colors.black,blurRadius: 10),
+            BoxShadow(offset: Offset(-10, -10),color: Colors.white.withOpacity(0.1),blurRadius: 10),
+            ],
+            gradient: LinearGradient(
+          colors: <Color>[
+          Color(0xfff50000),
+           Color(0xfff50000),
+          Color(0xfff50000),
+           Color(0xffEC4C24),
+           Colors.deepOrange.withOpacity(1), 
+             Colors.deepOrange,
+              Colors.orange,
+            
+          ],
+          begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
   ),
-           border: Border.all(color: Colors.deepOrange,width: 3),
-            borderRadius: BorderRadius.circular(40.0),
-        ),
-        child: RaisedGradientButton(
-          child: Icon(
-                      Icons.pause,
-                      color: Colors.white
-                    ),
-                    onPressed: (){},
+             border: Border.all(color: Colors.deepOrange,width: 3),
+              borderRadius: BorderRadius.circular(40.0),
+          ),
+          child: RaisedGradientButton(
+            child: Icon(
+                        Icons.pause,
+                        color: Colors.white
+                      ),
+                     
 ),
+        ),
+        onTap: (){
+          print("large gradient button pressed");
+        },
       ),
 );
   }

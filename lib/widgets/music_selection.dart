@@ -20,12 +20,8 @@ class MusicSelection extends StatelessWidget {
                   width: 3), 
               borderRadius: BorderRadius.circular(15),
               boxShadow: [
-                BoxShadow(
-                  color: Color(0xff333940).withOpacity(0.60),
-                  blurRadius: 20,
-                  spreadRadius: 3,
-                  offset: Offset(0.0, 0.75),
-                )
+                BoxShadow(offset: Offset(5, 5),color: Colors.black,blurRadius: 5),
+            BoxShadow(offset: Offset(-5, -5),color: Colors.white.withOpacity(0.1),blurRadius: 10),
               ]),
     );
   }

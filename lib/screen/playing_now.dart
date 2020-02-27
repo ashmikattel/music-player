@@ -16,7 +16,6 @@ class NowPlayingScreen extends StatelessWidget {
               gradient: LinearGradient(
                 colors: [
                   Color(0xff2f3030),Colors.black,
-                  //Colors.red,Colors.blue
                 ],
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
@@ -36,13 +35,16 @@ class NowPlayingScreen extends StatelessWidget {
                           color: Color(0xff222529),
                           border: Border.all(color:Color(0xff181A1E).withOpacity(0.35),width: 3),
                           borderRadius: BorderRadius.circular(50.0),
-                          boxShadow: [BoxShadow(
-                            color: Colors.grey.withOpacity(0.2),
-                            //color: Color(0xff333940),//.withOpacity(0.40),
-                                blurRadius: 20,
-                                spreadRadius: 3,
-                                offset: Offset(0.0, 0.75),
-                          )]
+                          boxShadow: [
+                          //   BoxShadow(
+                          //   color: Colors.grey.withOpacity(0.2),
+                          //       blurRadius: 20,
+                          //       spreadRadius: 3,
+                          //       offset: Offset(0.0, 0.75),
+                          // )
+                           BoxShadow(offset: Offset(5, 5),color: Colors.black,blurRadius: 5),
+            BoxShadow(offset: Offset(-5, -5),color: Colors.white.withOpacity(0.1),blurRadius: 10)
+                          ]
                         ),
                         child: Center(
                             child: Icon(
@@ -72,13 +74,17 @@ class NowPlayingScreen extends StatelessWidget {
                           color: Color(0xff222529),
                           border: Border.all(color:Color(0xff181A1E).withOpacity(0.35),width: 3),
                           borderRadius: BorderRadius.circular(50.0),
-                          boxShadow: [BoxShadow(
-                            color: Colors.grey.withOpacity(0.2),
-                            //color: Color(0xff333940),//.withOpacity(0.40),
-                                blurRadius: 20,
-                                spreadRadius: 3,
-                                offset: Offset(0.0, 0.75),
-                          )]
+                          boxShadow: [
+                          //   BoxShadow(
+                          //   color: Colors.grey.withOpacity(0.2),
+                          //       blurRadius: 20,
+                          //       spreadRadius: 3,
+                          //       offset: Offset(0.0, 0.75),
+                          // ),
+
+                        BoxShadow(offset: Offset(5, 5),color: Colors.black,blurRadius: 5),
+            BoxShadow(offset: Offset(-5, -5),color: Colors.white.withOpacity(0.1),blurRadius: 10)
+                          ]
                         ),
                         child: Center(
                             child: Icon(

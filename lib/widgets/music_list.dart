@@ -41,12 +41,10 @@ class MusicListModel extends StatelessWidget {
                         color: Color(0xff181A1E).withOpacity(0.9),
                         border: Border.all(color:Color(0xff181A1E),width: 2),
                         borderRadius: BorderRadius.circular(15.0),
-                        boxShadow: [BoxShadow(
-                          color: Color(0xff333940).withOpacity(0.40),
-                              blurRadius: 5,
-                              spreadRadius: 3,
-                              offset: Offset(0.0, 0.75),
-                        )]
+                        boxShadow: [
+                         BoxShadow(offset: Offset(5, 5),color: Colors.black,blurRadius: 5),
+            BoxShadow(offset: Offset(-5, -5),color: Colors.white.withOpacity(0.1),blurRadius: 10)
+                        ]
                       ),
                       child: Center(
                           child: Icon(
