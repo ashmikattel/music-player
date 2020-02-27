@@ -8,12 +8,11 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        // height: MediaQuery.of(context).size.height*0.5,
+        height: MediaQuery.of(context).size.height,
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: [
                   Color(0xff2f3030),Colors.black,
-                  //Colors.red,Colors.blue
                 ],
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
@@ -66,7 +65,7 @@ class MyHomePage extends StatelessWidget {
                     width: 50,
                      decoration: BoxDecoration(
                       color: Color(0xff222529),
-                      border: Border.all(color:Color(0xff181A1E).withOpacity(0.30),width: 3),//262A2F
+                      border: Border.all(color:Color(0xff181A1E).withOpacity(0.30),width: 3),
                       borderRadius: BorderRadius.circular(50.0),
                       boxShadow: [BoxShadow(
                         color: Color(0xff333940).withOpacity(0.60),

@@ -63,8 +63,8 @@ class LargeGradientCircle extends StatelessWidget {
             ]),
             child: Container(
               margin: EdgeInsets.all(6),
-              height: 100,
-              width: 0,
+              height: 220,
+              width: 220,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(125),
                   image: DecorationImage(

@@ -17,7 +17,7 @@ class MusicSelection extends StatelessWidget {
               ),
               border: Border.all(
                   color: Color(0xff181A1E).withOpacity(0.30),
-                  width: 3), //262A2F
+                  width: 3), 
               borderRadius: BorderRadius.circular(15),
               boxShadow: [
                 BoxShadow(

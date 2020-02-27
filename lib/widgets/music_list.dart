@@ -20,7 +20,7 @@ class MusicListModel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: MediaQuery.of(context).size.height * 0.4,
+        height: MediaQuery.of(context).size.height * 0.5,
         child: ListView.builder(
           itemBuilder: (ctx , index){
             return InkWell(

@@ -19,17 +19,6 @@ class RaisedGradientButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return 
     Container(
-      // width: 100,
-      // height: 50.0,
-      // decoration: BoxDecoration(gradient: gradient, 
-      // boxShadow: [
-      //   BoxShadow(
-      //     color: Colors.grey[500],
-      //     offset: Offset(0.0, 1.5),
-      //     blurRadius: 1.5,
-      //   ),
-      // ]
-      // ),
       child: Material(
         color: Colors.transparent,
         child: InkWell(
@@ -66,9 +55,7 @@ class LargeGradientButtonModel extends StatelessWidget {
          Colors.deepOrange.withOpacity(1), 
            Colors.deepOrange,
             Colors.orange,
-           //Color(0xfff29830),
-          //Color(0xffEB4223),
-       //,
+          
         ],
         begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
@@ -117,9 +104,6 @@ class SmallGradientButtonModel extends StatelessWidget {
          Colors.deepOrange.withOpacity(1), 
            Colors.deepOrange,
             Colors.orange,
-           //Color(0xfff29830),
-          //Color(0xffEB4223),
-       //,
         ],
         begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
