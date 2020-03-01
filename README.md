@@ -1,6 +1,9 @@
 # simple_music_player
 
-A new Flutter project.
+Implementing the above project the result comes like the following :
+
+![image](https://github.com/ashmikattel/music-player/blob/master/screenShots/screen1.png)
+![image](https://github.com/ashmikattel/music-player/blob/master/screenShots/screen2.png)
 
 ## Getting Started
 
